@@ -1,0 +1,392 @@
+*,*::after,*::before{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+
+}
+
+body{
+
+    background: #F3F4F6;
+
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 90px;
+
+}
+
+nav .logo{
+
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.toggleBoxNav{
+
+    display: flex;
+
+}
+
+.headNavToogle{
+
+    width: 75px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: transparent; 
+    border: 1px solid #D2D2D2;
+    border-radius: 17px;
+    transition: 0.3s;
+
+}
+
+.headNavToogle::after{
+
+    content: "";
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: black;
+    border-radius: 100%;
+    transition: 0.3s;
+
+}
+
+.toggleBoxNav input{
+
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+}
+
+.toggleBoxNav input:checked + .headNavToogle::after{
+
+    left: 42px;
+    background: white;
+
+}
+
+.headNavToogle:active:after{
+
+    width: 40px;
+
+}
+
+.headNavToogle img{
+
+    position: absolute;
+    top: 4px;
+    z-index: 100;
+
+}
+
+.sun{
+
+    left: 4px;
+
+}
+
+.moon{
+
+    left: 50px;
+
+}
+
+.main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.priceCardsBox{
+
+    display: flex;
+    gap: 65px;
+    margin-top: 90px;
+
+}
+
+.card{
+
+    border: 4px solid #D2D2D2;
+    border-radius: 23px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+
+}
+
+.buyBtn{
+
+    padding: 15px 36px;
+    background: black;
+    border: 2px solid black;
+    border-radius: 35px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.buyBtn:hover{
+
+    background: transparent;
+    color: black;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.packName{
+
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.packPrice{
+
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 26px;
+
+}
+
+.packPrice span{
+
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.packType{
+
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 17px;
+
+}
+
+.planProfessional .packType{
+
+    display: none;
+
+}
+
+.planProfessional .packName{
+
+    margin-top: 22px;
+
+}
+
+.card p{
+
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.card p span{
+
+    font-weight: 500;
+    font-size: 28px;
+
+}
+
+.card p:first-of-type{
+
+    margin-top: 26px;
+
+}
+
+.card p:not(:first-of-type){
+
+    margin-top: 15px;
+
+}
+
+.priceToggle{
+
+    width: 92.22px;
+    height: 40px;    
+    position: relative;
+    display: block;
+    background: #F3F4F6; 
+    border: 1px solid #D2D2D2;
+    border-radius: 17px;
+    transition: 0.3s;
+
+}
+
+.priceToggle::after{
+
+    content: "";
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: -1px;
+    left: -10px;
+    background: linear-gradient(to left, #BA90FF, #FFD872);
+    border-radius: 100%;
+    transition: 0.3s;
+
+}
+
+.priceToggleBox input{
+
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+}
+
+.priceToggleBox input:checked + .priceToggle::after{
+
+    left: 61px;
+
+}
+
+.priceToggle:active:after{
+
+    width: 37px;
+
+}
+
+.priceToogleBox{
+
+    display: flex;
+
+}
+
+.toggleBox{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.planProfessional {
+    position: relative;
+    background: white;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.planProfessional::after,
+.planProfessional::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, #BA90FF, #FFD872);
+    top: 50%;
+    left: 50.12%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    border-radius: 27px;
+    transition: all 0.3s ease-in-out;
+}
+
+.planProfessional::after,
+.planProfessional::before {
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    transform: translate(-50%, -50%);
+    padding: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blurBox1{
+
+    position: absolute;
+    width: 512.2px;
+    height: 487.7px;
+    top: 69px;
+    left: 327px;
+    background: #fcde7b6b;
+    border-radius: 100%;
+    z-index: -100;
+    filter: blur(100px);
+
+}
+
+.blurBox2{
+
+    position: absolute;
+    width: 512.2px;
+    height: 487.7px;
+    top: 0px;
+    left: 720.6px;
+    background: #83ca846d;
+    border-radius: 100%;
+    z-index: -100;
+    filter: blur(100px);
+
+}
+
+.blurBox3{
+
+    position: absolute;
+    width: 765.57px;
+    height: 728.95px;
+    top: 199.5px;
+    left: 0px;
+    background: #9c32f949;
+    z-index: -100;
+    filter: blur(100px);
+
+
+}
+
+.blurBox4{
+
+    position: absolute;
+    width: 765.57px;
+    height: 728.95px;
+    top: 213.5px;
+    right: 0px;
+    background: #32adf94c;
+    z-index: -100;
+    filter: blur(100px);
+
+
+}
+
+.skipLink{
+
+    color: #757575;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 60px;
+
+}

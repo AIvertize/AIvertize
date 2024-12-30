@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="blurBox1 blurBox"></div>
+    <div class="blurBox2 blurBox"></div>
+    <div class="blurBox3 blurBox"></div>
+    <div class="blurBox4 blurBox"></div>
+
+    <nav>
+
+        <a href="#" class="logo">Alvertize</a>
+
+        <div class="toggleBoxNav">
+
+            <input type="checkbox" id="darkmode-toogle">
+            <label for="darkmode-toogle" class="headNavToogle">
+    
+                <img src="./icons/sunIcon.svg" alt="#" class="sun">
+                <img src="./icons/moonIcon.svg" alt="#" class="moon">
+    
+            </label>
+
+        </div>
+
+    </nav>
+
+    <div class="main">
+
+        <h1>Choose your business plan:</h1>
+
+        <div class="priceCardsBox">
+
+            <div class="card planStarter">
+
+                <div class="cardMain">
+
+                    <h3 class="packName">Starter</h3>
+                    <h2 class="packPrice">$9.99</h2>
+                    <h3 class="packType">Per member, per week</h3>
+                    <p><span class="checkIcons">✓</span> Unlimited connections</p>
+                    <p><span class="checkIcons">✓</span> Premium support</p>
+                    <p><span class="checkIcons">✓</span> Featured listing</p>
+
+                </div>
+                
+                <a class="buyBtn">Buy now</a>
+
+            </div>
+
+            <div class="card planProfessional">
+
+                <div class="cardMain">
+
+                    <div class="toggleBox">
+
+                        <div class="priceToggleBox">
+    
+                            <input type="checkbox" id="priceToggle">
+                            <label for="priceToggle" class="priceToggle">
+        
+                        </div>
+    
+                    </div>
+    
+                    <h3 class="packName">Professional <br> 
+                        plan</h3>
+                    <h2 class="packPrice">$49.99<span>/mo</span></h2>
+                    <h3 class="packType">Annual (10% discount)</h3>
+                    <p><span class="checkIcons">✓</span> Unlimited connections</p>
+                    <p><span class="checkIcons">✓</span> Premium support</p>
+                    <p><span class="checkIcons">✓</span> Featured listing</p>
+
+                </div>
+
+                <a class="buyBtn">Buy now</a>
+
+            </div>
+
+            <div class="card planUltimate">
+
+                <div class="cardMain">
+
+                    <h3 class="packName">Ultimate</h3>
+                    <h2 class="packPrice">$499.99</h2>
+                    <h3 class="packType">Annual (17% discount)</h3>
+                    <p><span class="checkIcons">✓</span> Unlimited connections</p>
+                    <p><span class="checkIcons">✓</span> Premium support</p>
+                    <p><span class="checkIcons">✓</span> Featured listing</p>
+
+                </div>
+
+                <a class="buyBtn">Buy now</a>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="skipLink">skip for now</a>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
